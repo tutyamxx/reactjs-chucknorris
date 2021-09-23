@@ -60,9 +60,15 @@ h1 {
 .navbar .links {
 	margin-left: auto;
 }
+
 .navbar a {
 	color: wheat;
 	margin-left: 16px;
 	text-decoration: none;
 	padding: 6px;
+}
+
+img.chuck {
+	width: 50%;
+	height: 50%;
 }
