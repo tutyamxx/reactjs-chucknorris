@@ -12,17 +12,17 @@ const App = () => {
         <Navbar />
 
         <div className="App-header">
-           <Switch>
-             <Route exact path="/">
-                <PageTitle pageTitle="Random Chuck Norris Jokes" />
-                <FetchNorrisJoke />
-              </Route>
+          <Switch>
+            <Route exact path="/">
+              <PageTitle pageTitle="Random Chuck Norris Jokes" />
+              <FetchNorrisJoke />
+            </Route>
 
-              <Route path="/about">
-                <PageTitle pageTitle="About Page" />
-                <About />
-              </Route>
-            </Switch>
+            <Route path="/about">
+              <PageTitle pageTitle="About Page" />
+              <About />
+            </Route>
+          </Switch>
         </div>
 
       </div>
