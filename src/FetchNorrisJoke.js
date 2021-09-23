@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import GetNewJoke from "./GetNewJoke";
 
 const FetchNorrisJoke = () => {
     const [joke, setJoke] = useState("No joke found");
@@ -14,7 +15,7 @@ const FetchNorrisJoke = () => {
     return (
         <div className="joke-container">
             <p>{ joke }</p>
-            <button onClick={ async () => fetchJokeFromAPI() } className="fetch-button">Another One!</button>
+            <GetNewJoke fetchJokeFromAPI={ fetchJokeFromAPI }/>
         </div>
     );
 };
