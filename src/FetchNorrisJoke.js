@@ -13,7 +13,7 @@ const FetchNorrisJoke = () => {
 
     return (
         <div className="joke-container">
-            <p>{joke}</p>
+            <p>{ joke }</p>
             <button onClick={ async () => fetchJokeFromAPI() } className="fetch-button">Another One!</button>
 
         </div>
