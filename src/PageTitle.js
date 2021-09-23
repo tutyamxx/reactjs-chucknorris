@@ -1,8 +1,6 @@
-const PageTitle = () => {
-    const pageTitle = "Random Chuck Norris Jokes";
-    document.title = pageTitle;
-
-    return (<h1>{ pageTitle }</h1>);
+const PageTitle = (props) => {
+    document.title = props.pageTitle;
+    return (null);
 };
 
 export default PageTitle;
