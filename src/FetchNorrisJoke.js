@@ -15,7 +15,6 @@ const FetchNorrisJoke = () => {
         <div className="joke-container">
             <p>{ joke }</p>
             <button onClick={ async () => fetchJokeFromAPI() } className="fetch-button">Another One!</button>
-
         </div>
     );
 };
