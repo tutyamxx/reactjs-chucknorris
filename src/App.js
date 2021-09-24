@@ -1,9 +1,9 @@
-import './styles/App.css';
-import FetchNorrisJoke from './FetchNorrisJoke';
-import PageTitle from './PageTitle';
-import About from './About';
-import Navbar from './Navbar';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import "./styles/App.css";
+import FetchNorrisJoke from "./FetchNorrisJoke";
+import PageTitle from "./PageTitle";
+import About from "./About";
+import Navbar from "./Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (

@@ -9,9 +9,17 @@ const FetchNorrisJoke = () => {
     useEffect(() => fetchJokeFromAPI(), [loading]);
 
     const fetchJokeFromAPI = async () => {
-        const fetchAPI = await axios.get("https://api.chucknorris.io/jokes/random").then((response) => response?.data?.value?.trim() || "No joke found");
-        setJoke(fetchAPI);
-        setLoading(false);
+        try  {
+            const fetchAPI = await axios.get("https://api.chucknorris.io/jokes/random").then((response) => response?.data?.value?.trim() || "No joke found");
+            setJoke(fetchAPI);
+            setLoading(false);
+        }
+        catch (error) {
+            setJoke("No joke found");
+            setLoading(false);
+        }
+
+        return;
     };
 
     return (
