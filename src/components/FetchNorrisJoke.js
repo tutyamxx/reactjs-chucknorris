@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import GetNewJoke from "./GetNewJoke";
-import loadingAnimation from "./images/loading.svg";
+import loadingAnimation from "../images/loading.svg";
 
 const FetchNorrisJoke = () => {
     const [joke, setJoke] = useState("No joke found");
@@ -32,7 +32,7 @@ const FetchNorrisJoke = () => {
     return (
         <div className="joke-container">
             <p>{loading ? <img alt="Loading animation" src={ loadingAnimation } /> : joke }</p>
-            <GetNewJoke fetchJokeFromAPI={ fetchJokeFromAPI }/>
+            <GetNewJoke fetchJokeFromAPI={ fetchJokeFromAPI } loading={ loading }/>
         </div>
     );
 };
