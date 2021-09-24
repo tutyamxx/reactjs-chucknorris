@@ -8,7 +8,7 @@
 - Passing `methods` and `props` to other components
 - Reusable components
 - Use of animations
-- Use of hooks `useEffect` to gather data and `useState` for `states`
+- Use of hooks `useEffect` (and its dependencies, if any?) to gather data and `useState` for `states`
 - Use of `react-router-dom`
 - Use of new React.js coding style without bloating classes
 
