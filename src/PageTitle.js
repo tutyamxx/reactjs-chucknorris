@@ -1,6 +1,3 @@
-const PageTitle = (props) => {
-    document.title = props.pageTitle;
-    return (null);
-};
+const PageTitle = (props) => document.title = props.pageTitle;
 
 export default PageTitle;
