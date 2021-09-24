@@ -31,7 +31,7 @@ const FetchNorrisJoke = () => {
 
     return (
         <div className="joke-container">
-            <p>{loading ? <img alt="Loading animation" src={ loadingAnimation } /> : joke }</p>
+            <p>{ loading ? <img alt="Loading animation" src={ loadingAnimation } /> : joke }</p>
             <GetNewJoke fetchJokeFromAPI={ fetchJokeFromAPI } loading={ loading }/>
         </div>
     );
