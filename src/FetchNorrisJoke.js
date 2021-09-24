@@ -14,6 +14,7 @@ const FetchNorrisJoke = () => {
             const fetchAPI = await axios.get("https://api.chucknorris.io/jokes/random").then((response) => response?.data?.value?.trim() || "No joke found");
 
             setLoading(true);
+
             setTimeout(() => {
                 setJoke(fetchAPI);
                 setLoading(false);
